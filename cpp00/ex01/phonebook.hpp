@@ -1,5 +1,9 @@
+#pragma once
+
 #include <string>
 #include <iostream>
+#include <stdlib.h>
+#include <iomanip>
 #include "contact.hpp"
 
 class Phonebook
