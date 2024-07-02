@@ -28,8 +28,8 @@ void	Phonebook::Add() {
 		count++;
 	}
 	else {
-		for (int i = 0; i < 8; i++){
-			contact[i] = contact[i + 1];
+		for (int i = 1; i < 8; i++){
+			contact[i - 1] = contact[i];
 		}
 		contact[7] = newContact;
 	}
