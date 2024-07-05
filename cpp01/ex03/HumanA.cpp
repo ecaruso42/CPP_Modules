@@ -1,9 +1,9 @@
 #include "HumanA.hpp"
 
-HumanA::HumanA(std::string name, class Weapon& newWeapon){
+HumanA::HumanA(std::string name, Weapon& newWeapon) : weapon(newWeapon) {
 	std::cout << "HumanA has been created" << std::endl;
 	this->_name = name;
-	this->weapon = newWeapon;
+	//this->weapon = newWeapon;
 }
 
 HumanA::~HumanA(){
@@ -11,5 +11,5 @@ HumanA::~HumanA(){
 }
 
 void HumanA::attack(){
-	std::cout << _name << " attacks with their " << weapon.getType() << std::endl;
+	std::cout << _name << " attacks with their " << this->weapon.getType() << std::endl;
 }
