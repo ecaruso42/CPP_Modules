@@ -2,16 +2,17 @@
 
 int	main(){
 	Harl Harl;
+    std::string level;
 
-	std::cout << std::endl;
-    Harl.complain("DEBUG");
-    std::cout << std::endl;
-    Harl.complain("INFO");
-    std::cout << std::endl;
-    Harl.complain("WARNING");
-    std::cout << std::endl;
-    Harl.complain("ERROR");
-    std::cout << std::endl;
-
+	while (1)
+	{
+		std::cout << "Enter the level of your complaint (DEBUG, INFO, WARNING, ERROR): ";
+		std::getline(std::cin, level);
+		if (std::cin.eof())
+			break ;
+		if (level == "EXIT")
+			break ;
+		Harl.complain(level);
+	}
 	return 0;
 }
