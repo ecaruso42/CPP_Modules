@@ -21,11 +21,11 @@ ClapTrap& ClapTrap::operator = (const ClapTrap& other){
 }
 
 ClapTrap::~ClapTrap(){
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "Destructor for " << _Name << " called" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name){
-	std::cout << "Non_default constructor called" << std::endl;
+	std::cout << "Non_default constructor for " << name << " called" << std::endl;
 	this->_Name = name;
 	_HitPoints = 100;
 	_EnergyPoints = 50;
