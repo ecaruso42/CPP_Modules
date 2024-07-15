@@ -8,7 +8,7 @@ int	main(void){
 	FragTrap Ciro("Ciro");
 	std::cout << "ClapTrap Gennaro, ScavTrap Concetta, FragTrap Ciro and their nemesis, Pasquale, has been created" << std::endl;
 	std::string input;
-	int	PasqualeHP = 100;
+	int	PasqualeHP = 150;
 	int flag = 0;
 	while (true){
 		while (true){
@@ -77,7 +77,8 @@ int	main(void){
 			else{
 				std::cout << "Wrong input, retry" << std::endl;
 			}
-			while (true){
+		}
+		while (true){
 			std::cout << "ClapTrap Gennaro has " << Gennaro.GetHP() << " HP and " << Gennaro.GetEP() << " EP" << std::endl;
 			std::cout << "ScavTrap Concetta has " << Concetta.GetHP() << " HP and " << Concetta.GetEP() << " EP" << std::endl;
 			std::cout << "ScavTrap Ciro has " << Ciro.GetHP() << " HP and " << Ciro.GetEP() << " EP" << std::endl;
@@ -87,7 +88,7 @@ int	main(void){
 			system("clear");
 			if (input == "Attack"){
 				Ciro.attack("Pasquale");
-				PasqualeHP -= 20;
+				PasqualeHP -= 30;
 				if (PasqualeHP <= 0){
 					std::cout << "You defeated Pasquale, now Caserta is free from all the evil, Congratulations!" << std::endl;
 					return 0;
@@ -112,7 +113,6 @@ int	main(void){
 			else{
 				std::cout << "Wrong input, retry" << std::endl;
 			}
-		}
 		}
 		if (flag == 1){
 			std::cout << "Pasquale attacks with his big ass sword" << std::endl;
