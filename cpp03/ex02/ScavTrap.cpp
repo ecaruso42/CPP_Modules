@@ -25,7 +25,7 @@ ScavTrap::~ScavTrap(){
 }
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name){
-	std::cout << "Scavtrap constructor for " << name << " called" << std::endl;
+	std::cout << "Non_default Scavtrap constructor for " << name << " called" << std::endl;
 }
 
 void ScavTrap::guardGate(){

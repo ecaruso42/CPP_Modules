@@ -118,12 +118,17 @@ int	main(void){
 			std::cout << "Pasquale attacks with his big ass sword" << std::endl;
 			Gennaro.takeDamage(50);
 			Concetta.takeDamage(50);
+			Ciro.takeDamage(50);
 			if (Gennaro.GetHP() <= 0){
 				std::cout << "ClapTrap Gennaro got defeated by Pasquale, Caserta is lost forever, R.I.P:" << std::endl;
 				return 0;
 			}
 			if (Concetta.GetHP() <= 0){
 				std::cout << "ScavTrap Concetta got defeated by Pasquale, Caserta is lost forever, R.I.P:" << std::endl;
+				return 0;
+			}
+			if (Ciro.GetHP() <= 0){
+				std::cout << "FragTrap Ciro got defeated by Pasquale, Caserta is lost forever, R.I.P:" << std::endl;
 				return 0;
 			}
 			flag = 0;
