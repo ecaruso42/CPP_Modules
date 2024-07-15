@@ -11,10 +11,12 @@ DiamondTrap::DiamondTrap(const DiamondTrap& other) : ClapTrap(other), ScavTrap(o
 
 DiamondTrap& DiamondTrap::operator = (const DiamondTrap& other){
 	std::cout << "DiamondTrap copy assignment operator called" << std::endl;
-	this->_Name = other._Name;
-	this->_AttackDamage = other._AttackDamage;
-	this->_EnergyPoints = other._EnergyPoints;
-	this->_HitPoints = other._HitPoints;
+	if (this != &other){
+		this->_Name = other._Name;
+		this->_AttackDamage = other._AttackDamage;
+		this->_EnergyPoints = other._EnergyPoints;
+		this->_HitPoints = other._HitPoints;
+	}
 	return *this;
 }
 
