@@ -21,10 +21,11 @@ ScavTrap& ScavTrap::operator = (const ScavTrap& other){
 }
 
 ScavTrap::~ScavTrap(){
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "ScavTrap destructor for " << this->_Name << " called" << std::endl;
 }
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name){
+	std::cout << "Scavtrap constructor for " << name << " called" << std::endl;
 }
 
 void ScavTrap::guardGate(){

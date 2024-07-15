@@ -25,7 +25,7 @@ ClapTrap::~ClapTrap(){
 }
 
 ClapTrap::ClapTrap(std::string name){
-	std::cout << "Non_default constructor for " << name << " called" << std::endl;
+	std::cout << "Non_default ClapTrap constructor for " << name << " called" << std::endl;
 	this->_Name = name;
 	_HitPoints = 100;
 	_EnergyPoints = 50;
