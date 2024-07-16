@@ -34,6 +34,6 @@ DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name), ScavTrap(name), Fra
 }
 
 void	DiamondTrap::WhoAmI(void){
-	std::cout << "DiamondTrap name is " << this->_Name << std::endl;
+	std::cout << "DiamondTrap name is " << this->name << std::endl;
 	std::cout << "ClapTrap name is " << this->ClapTrap::_Name << std::endl;
 }

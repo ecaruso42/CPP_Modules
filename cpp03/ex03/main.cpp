@@ -125,7 +125,7 @@ int	main(void){
 			std::cout << "ScavTrap Ciro has " << Ciro.GetHP() << " HP and " << Ciro.GetEP() << " EP" << std::endl;
 			std::cout << "DiamondTrap Carmine has " << Carmine.GetHP() << " HP and " << Carmine.GetEP() << " EP" << std::endl;
 			std::cout << "Pasquale has " << PasqualeHP << " HP" << std::endl;
-			std::cout << "Carmine is attacking: Choose your move: Attack, Repair, WhoAmI or RunAway: " << std::endl;
+			std::cout << "Carmine is attacking: Choose your move: Attack, Repair, GateKeep, HighFive, WhoAmI or RunAway: " << std::endl;
 			std::getline(std::cin, input);
 			system("clear");
 			if (input == "Attack"){
@@ -140,6 +140,16 @@ int	main(void){
 			}
 			else if (input == "Repair"){
 				Carmine.beRepaired(60);
+				flag = 1;
+				break;
+			}
+			else if (input == "GateKeep"){
+				Carmine.guardGate();
+				flag = 1;
+				break;
+			}
+			else if (input == "HighFive"){
+				Carmine.highFivesGuys();
 				flag = 1;
 				break;
 			}

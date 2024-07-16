@@ -29,5 +29,5 @@ FragTrap::FragTrap(std::string name) : ClapTrap(name){
 }
 
 void	FragTrap::highFivesGuys(void){
-	std::cout << "Ciro, Gennaro and Concetta high-five each other, this fills their heart with determination" << std::endl;
+	std::cout << "Ciro, Gennaro, Concetta and Carmine high-five each other, this fills their heart with determination" << std::endl;
 }
