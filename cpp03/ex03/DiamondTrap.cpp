@@ -7,6 +7,7 @@ DiamondTrap::DiamondTrap(){
 DiamondTrap::DiamondTrap(const DiamondTrap& other) : ClapTrap(other), ScavTrap(other), FragTrap(other){
 	std::cout << "Copy constructor called" << std::endl;
 	*this = other;
+	return;
 }
 
 DiamondTrap& DiamondTrap::operator = (const DiamondTrap& other){

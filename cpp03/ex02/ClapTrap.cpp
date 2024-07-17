@@ -10,12 +10,16 @@ ClapTrap::ClapTrap(){
 ClapTrap::ClapTrap(const ClapTrap& other){
 	std::cout << "Copy constructor called" << std::endl;
 	*this = other;
+	return;
 }
 
 ClapTrap& ClapTrap::operator = (const ClapTrap& other){
 	std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &other){
-		*this = other;
+		this->_Name = other._Name;
+		this->_AttackDamage = other._AttackDamage;
+		this->_EnergyPoints = other._EnergyPoints;
+		this->_HitPoints = other._HitPoints;
 	}
 	return *this;
 }
