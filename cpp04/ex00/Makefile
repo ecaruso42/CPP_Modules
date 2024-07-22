@@ -1,8 +1,10 @@
-NAME = ClapTrap
+NAME = Animal
 CC = g++
 FLAGS = -Wall -Werror -Wextra -std=c++98
 SRC =	main.cpp \
-		Animal.cpp
+		Animal.cpp \
+		Cat.cpp \
+		Dog.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
