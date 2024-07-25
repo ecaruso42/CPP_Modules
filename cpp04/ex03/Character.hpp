@@ -10,7 +10,7 @@ class Character : public ICharacter{
 		Character();
 		Character(const Character& other);
 		Character& operator = (const Character& other);
-		virtual ~Character();
+		~Character();
 
 		Character(std::string name);
 		std::string const & getName() const;
