@@ -15,11 +15,13 @@ int main()
 
     AMateria* tmp;
     tmp = src->createMateria("ice");
-    me->equip(tmp);
+	if (tmp != 0)
+    	me->equip(tmp);
     tmp = src->createMateria("cure");
-    me->equip(tmp);
+	if (tmp != 0)
+    	me->equip(tmp);
 
-    ICharacter* bob = new Character("bob");
+    ICharacter* bob = new Character("Duce");
 
     me->use(0, *bob);
     me->use(1, *bob);

@@ -6,7 +6,7 @@ Character::Character(){
 	std::cout << "Default constructor for Character called" << std::endl;
 }
 
-Character::Character(const Character& other) : Character(other){
+Character::Character(const Character& other){
 	std::cout << "Copy constructor for Character called" << std::endl;
 	*this = other;
 	return ;

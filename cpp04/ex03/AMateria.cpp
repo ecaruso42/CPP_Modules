@@ -4,7 +4,7 @@ AMateria::AMateria(){
 	std::cout << "Default constructor for AMateria called" << std::endl;
 }
 
-AMateria::AMateria(const AMateria& other) : AMateria(other){
+AMateria::AMateria(const AMateria& other){
 	std::cout << "Copy constructor for AMateria called" << std::endl;
 	*this = other;
 	return ;

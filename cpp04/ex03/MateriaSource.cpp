@@ -6,7 +6,7 @@ MateriaSource::MateriaSource(){
 	std::cout << "Default constructor for MateriaSource called" << std::endl;
 }
 
-MateriaSource::MateriaSource(const MateriaSource& other) : MateriaSource(other){
+MateriaSource::MateriaSource(const MateriaSource& other){
 	std::cout << "Copy constructor for MateriaSource called" << std::endl;
 	*this = other;
 	return ;
@@ -32,10 +32,10 @@ void MateriaSource::learnMateria(AMateria* m){
 		if (this->_materia[i] == NULL){
 			std::cout << "Materia of type " << m->getType() << " learnt" << std::endl;
 			_materia[i] = m;
-			return ;
+			return;
 		}
-		std::cout << "Slots full, couldn't learn materia" << std::endl;
 	}
+	std::cout << "Slots full, couldn't learn materia" << std::endl;
 }
 
 AMateria* MateriaSource::createMateria(std::string const & type){
@@ -46,5 +46,5 @@ AMateria* MateriaSource::createMateria(std::string const & type){
 			}
 		}
 	}
-	return NULL;
+	return 0;
 }

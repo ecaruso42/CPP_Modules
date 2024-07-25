@@ -2,7 +2,7 @@
 
 Ice::Ice(){
 	std::cout << "Default constructor for Ice called" << std::endl;
-	this->_type = "Ice";
+	this->_type = "ice";
 }
 
 Ice::Ice(const Ice& other) : AMateria(other){
